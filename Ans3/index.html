@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Fetching Example</title>
+  <style>
+    .loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-size: 24px;
+    }
+    
+    .loader span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      background-color: #ccc;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    
+    @keyframes pulse {
+      0% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.6;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" id="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div id="data"></div>
+  <script src="script.js"></script>
+</body>
+</html>
